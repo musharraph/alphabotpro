@@ -156,8 +156,8 @@ function doLogin() {
   /* Simulate auth delay for UX trust */
   setTimeout(() => {
     if (
-      uInput.toLowerCase() === CREDENTIALS.username &&
-      pInput === CREDENTIALS.password
+      uInput.toLowerCase() === CREDENTIALS.username.toLowerCase().trim() &&
+      pInput === CREDENTIALS.password.toString().trim()
     ) {
       showToast('✅ Access granted! Welcome to Alpha Bot.');
       setTimeout(() => {
