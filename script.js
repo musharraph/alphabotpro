@@ -1,5 +1,5 @@
 /* ============================================================
-   SIGMA TRADING BOT — Premium Script
+   Alpha TRADING BOT — Premium Script
    ============================================================ */
 
 /* ---- State ---- */
@@ -118,7 +118,7 @@ updateClock();
 /* ============================================================
    LOGIN SYSTEM
    ============================================================ */
-const CREDENTIALS = { username: 'sigma', password: '1234' };
+const CREDENTIALS = { username: 'Alpha', password: '1234' };
 
 function togglePassword() {
   const input = document.getElementById('passwordInput');
@@ -159,7 +159,7 @@ function doLogin() {
       uInput.toLowerCase() === CREDENTIALS.username &&
       pInput === CREDENTIALS.password
     ) {
-      showToast('✅ Access granted! Welcome to Sigma Bot.');
+      showToast('✅ Access granted! Welcome to Alpha Bot.');
       setTimeout(() => {
         document.getElementById('loginScreen').style.display = 'none';
         document.getElementById('mainDashboard').style.display = 'flex';
